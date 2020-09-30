@@ -1,0 +1,66 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css">
+
+<style>
+  form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+  form div, .input-holder {
+        width: 100%;
+    }
+
+    div {
+    margin: 10px 20px 10px 20px;
+  }
+  p {
+    margin: 30px 0 0 0;
+    padding: 0;
+  }
+  td {
+    text-align: center;
+  }
+  button {
+    margin: 0 10px;
+  }
+
+  label.control-label {
+    width: 100px;
+  }
+
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+</style>
+
+<div class="contents" style="text-align:center">
+  <h1 style="text-align: center;">CSV to PDF Generator</h1>
+    <form action="" method="post" class="form" role="form" enctype="multipart/form-data">
+      {{ form.csrf_token() }}
+      <div class="form-inline">
+        {{ wtf.form_field(form.csv, class='form-control') }}
+      </div>
+      
+
+      <p >
+        <div class="form-inline">
+          <!-- <button type="button" class="btn btn-success" id="btn_add_row">Add Row</button> -->
+          <button type="submit" class="btn btn-info">PDF Generate</button>
+          <!-- <button type="button" class="btn btn-warning" id="btn_go_back">Go Back</button> -->
+        </div>
+    </form>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><!--https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js'></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+ 
+{% endblock %}

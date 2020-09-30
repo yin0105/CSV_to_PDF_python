@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+</head>
+<style>
+body {
+margin: 60px 60px 60px 90px;
+font-family: Ubuntu;
+}
+
+div.statement {
+background-color: #F73E6D;
+width: 220px;
+height: 40px;
+color:white;
+font-size: 22px;
+text-align: center;
+padding-top: 4px;
+}
+
+div.red_header {
+margin-top: 50px;
+color: #F73E6D;
+font-size: 25px;
+font-weight: bold;
+}
+
+div.header {
+margin-bottom: 0px;
+}
+
+td {
+padding: 5px 10px;
+color: #083150;
+font-size: 16px;
+}
+
+td.first_table_col_1 {
+text-align: right;
+font-weight: bold;
+}
+
+td.first_table_col_2 {
+text-align: left;
+}
+
+table.first_table {
+float: right;
+text-align: right;
+}
+
+table.first_table tr {
+height: 20px;
+}
+
+table.other_table {
+width: 100%;
+}
+
+table.other_table th{
+background-color: #083150;
+color: white;
+font-weight: bold;
+text-align: center;
+}
+
+table.other_table thead tr {
+height: 40px;
+}
+
+table.other_table tbody tr td:first-child {
+white-space: nowrap;
+font-weight: bold;
+}
+
+
+
+table.other_table tbody tr td:nth-child(n+2) {
+text-align: center;
+border-left: solid 2px #D9E2F3;
+border-right: solid 2px #D9E2F3;
+/* border-top: solid 2px #D9E2F3; */
+border-bottom: solid 2px #D9E2F3;
+}
+
+table.second_table tbody tr:nth-last-child(2) td {
+border-bottom: solid 2px #083150;
+}
+
+table.second_table tbody tr:last-child td:first-child {
+text-align: right;
+}
+
+
+
+</style>
+<body>
+<div class="row header">
+<div style="float: left; text-align: left;">
+<div class="statement">STATEMENT</div>
+</div>
+<div style="float: right; text-align: right;">
+<img src="logo.png" width="240px"/>
+</div>
+</div>
+<div class="row">
+<div class="red_header">Client Summary</div>
+<table class="first_table">
+<tr>
+<td class="first_table_col_1">
+Client
+</td>
+<td class="first_table_col_2">
+SAM STEVENS
+</td>
+</tr>
+<tr>
+<td class="first_table_col_1">
+Client account nr
+</td>
+<td class="first_table_col_2">
+12345
+</td>
+</tr>
+<tr>
+<td class="first_table_col_1">
+Client address
+</td>
+<td class="first_table_col_2">
+10 LONG ROAD
+</td>
+</tr>
+<tr>
+<td class="first_table_col_1">
+
+</td>
+<td class="first_table_col_2">
+SEA POINT
+</td>
+</tr>
+<tr>
+<td class="first_table_col_1">
+
+</td>
+<td class="first_table_col_2">
+CLIENT_ADDRESS3
+</td>
+</tr>
+<tr>
+<td class="first_table_col_1">
+Client contact nr
+</td>
+<td class="first_table_col_2">
+8111111111
+</td>
+</tr>
+<tr>
+<td class="first_table_col_1">
+Contract date
+</td>
+<td class="first_table_col_2">
+21/08/2018
+</td>
+</tr>
+<tr>
+<td class="first_table_col_1">
+Statement Date:
+</td>
+<td class="first_table_col_2">
+22/09/2020
+</td>
+</tr>
+</table>
+</div>
+<div class="row">
+<div class="red_header">Fee Balance Summary</div>
+<table class="second_table other_table">
+<thead>
+<tr>
+<th>
+FEE ITEM
+</th>
+<th>
+R-DUE
+</th>
+<th>
+R-PAID
+</th>
+<th>
+R-BALANCE
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Restructure, Application and Admin fees
+</td>
+<td>
+3000
+</td>
+<td>
+0
+</td>
+<td>
+3000
+</td>
+</tr>
+
+<tr>
+<td>
+Reckless Lending assessment fee
+</td>
+<td>
+1500
+</td>
+<td>
+0
+</td>
+<td>
+1500
+</td>
+</tr>
+
+<tr>
+<td>
+Legal Fees
+</td>
+<td>
+2500
+</td>
+<td>
+0
+</td>
+<td>
+2500
+</td>
+</tr>
+
+<tr>
+<td>
+PDA Fee
+</td>
+<td>
+150
+</td>
+<td>
+150
+</td>
+<td>
+0
+</td>
+</tr>
+
+<tr>
+<td>
+After-Care (6 Month After care fees on withdrawal)
+</td>
+<td>
+1500
+</td>
+<td>
+0
+</td>
+<td>
+1500
+</td>
+</tr>
+
+<tr>
+<td>
+TOTAL
+</td>
+<td>
+6700
+</td>
+<td>
+0
+</td>
+<td>
+6700
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="row">
+<div class="red_header">Statement of Payments</div>
+<table class="other_table">
+<thead>
+<tr>
+<th>
+DESCRIPTION
+</th>
+<th>
+DATE
+</th>
+<th>
+CREDIT
+</th>
+<th>
+DEBIT
+</th>
+<th>
+BALANCE
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Fees raised
+</td>
+<td>
+21/10/2018
+</td>
+<td>
+100
+</td>
+<td>
+200
+</td>
+<td>
+300
+</td>
+</tr>
+
+<tr>
+<td>
+Payment received
+</td>
+<td>
+21/09/2019
+</td>
+<td>
+125
+</td>
+<td>
+250
+</td>
+<td>
+350
+</td>
+</tr>
+
+<tr>
+<td>
+Payment received
+</td>
+<td>
+29/10/2019
+</td>
+<td>
+250
+</td>
+<td>
+300
+</td>
+<td>
+320
+</td>
+</tr>
+
+<tr>
+<td>
+Payment received
+</td>
+<td>
+29/10/2019
+</td>
+<td>
+250
+</td>
+<td>
+300
+</td>
+<td>
+320
+</td>
+</tr>
+
+<tr>
+<td>
+Payment received
+</td>
+<td>
+29/10/2019
+</td>
+<td>
+250
+</td>
+<td>
+300
+</td>
+<td>
+320
+</td>
+</tr>
+
+<tr>
+<td>
+Payment received
+</td>
+<td>
+29/10/2019
+</td>
+<td>
+250
+</td>
+<td>
+300
+</td>
+<td>
+320
+</td>
+</tr>
+
+<tr>
+<td>
+Payment received
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+</tr>
+
+<tr>
+<td>
+Payment received
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</body>
+
+</html>
